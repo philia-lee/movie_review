@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: '';line-height: 0;}
+.clearfix:after {clear: both;}
+/* 레이아웃 */
+#header {width: 100%; border-bottom: 1px solid #353535;
+    font-family: 'Malgun Gothic','맑은 고딕';
+    font-size: 13px;
+    line-height: 1.5;
+    color: white;}
+#header a:hover{
+    color: #2698cb;
+}
+#header ul{
+    list-style: none;
+    padding:0;
+}
+#header li{
+    list-style: none;
+    text-align:start;
+    color: white;
+}
+#header p{
+    text-align: start;
+}
+#header a{text-decoration: none;color:white;}
+
+/* 가운데 영역 */
+.container {position: relative; width: 1280px; margin: 0 auto; background: rgba(0,0,0,0); }
+
+.row {
+    padding: 0 28px;
+    position: relative;
+}
+.logo {
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+    width:410px;
+    height:110px;
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.toolbar{
+    position: absolute;
+    right:10px;
+    overflow: hidden;
+    width:176px;
+    border-bottom:1px solid #808080;
+    border-right: 1px solid #808080;
+    border-left: 1px solid #808080;
+
+}
+.toolbar ul{
+    text-align: right;
+}
+.toolbar li{
+    display: inline-block;
+}
+.toolbar li a{
+    display: block;
+}
+.toolbar li a{
+    text-decoration: none;
+}
+.toolbar li:last-child{
+     border-left: 1px solid #808080;
+    padding: 5px 22px;
+    width:40px;
+}
+.toolbar li:first-child{
+
+     padding: 5px 12px;
+    width:60px;
+}
+.toolbar1{
+    position: absolute;
+    right:10px;
+    padding-left: 10px;
+    overflow: hidden;
+    width:176px;
+    border-bottom:1px solid #808080;
+    border-right: 1px solid #808080;
+    border-left: 1px solid #808080;
+}
+.toolbar1 ul{
+    text-align: left;
+}
+.toolbar1 li{
+    display:block;
+    font-size: 15px;
+    position: relative;
+    color: white;
+}
+.toolbar1 .name{
+    float:left;
+
+}
+.toolbar1 .logout{
+    position: absolute;
+    right:20px;
+    width:58px;
+    outline:none;
+    border:1px solid #e5e8ef;;
+    cursor: pointer;
+    color: #444;
+    background-color: white;
+    font-size:13px;
+}
+.toolbar1 input:hover{
+    border-color: #bec8d8;
+}
+.toolbar1 li:last-child{
+clear: both;
+}
+.search__input{width:199px;height: 19px;
+border:0;
+padding:5px 0px;
+outline: 0;
+background-color: transparent;
+font-size: 14px;color:white;}
+.search__btn{
+    height:20px;
+    width:21px;
+    font-size:14px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' fill='white' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+}
+.search{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    overflow: hidden;
+
+    width: 226px;
+    height: 19px;
+    color: white;
+    padding: 5px 11px;
+    background-color: #5b5b5b;
+    transition: transform 250ms ease-in-out;
+    line-height: 18px;
+    color: #575756;
+    background-color: #5b5b5b;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.search__input:placeholder {
+    color: color(white a(0.8));
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.search__btn:hover{cursor:pointer;}
+.search:hover,
+.search:focus-within {
+    padding: 5px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+    background-color: transparent;
+}
+/*메인*/
+#sec_top{
+    margin: 30px;
+  }
+  body{
+    text-align: center;
+    background-color:#191919;
+    color:white;
+    font-family: "맑은 고딕";
+  }
+  a{
+    text-decoration: none;
+      color:white;
+  }
+
+  .밑줄:hover, a:hover{
+    text-decoration: underline;
+  }
+
+  #main {
+      width: 1200px;
+      height: auto;
+      margin: 0px auto;
+  }
+  #게시판{
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  #review{
+    line-height:160%;
+  }
+  #사이공간{
+    width: auto;
+    height: 30px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+  .review_line{
+    border-right: 1px solid gray;
+    margin-right: 10px;
+    padding-right: 12px;
+  }
+  .review_title{
+    color:#FFE08C;
+    display: inline;
+  }
+  .review_layout{
+    padding:30px 0px;
+    border-bottom: 1px dashed gray;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+  .review_layout_last{
+    padding:30px 0px;
+    text-align: left;
+  }
+  #index_layout{
+    margin:20px auto;
+  }
+  #index{
+    text-align: center;
+    align-self: center;
+    margin: 0px auto;
+  }
+  .index_num{
+    border: 1px solid gray;
+    width: 40px;
+    height: 40px;
+    float: left;
+    background-color: #353535;
+    line-height:240%;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  #current_page, .index_num:hover, #글쓰기:hover{
+    border: 2px solid #3163C9;
+  }
+  .clear{
+    clear:both;
+  }
+  #글쓰기_틀{
+    float: right;
+    position: relative;
+  }
+  #글쓰기{
+    border: 1px solid gray;
+    width: 120px;
+    height: 40px;
+    background-color: #353535;
+    line-height:240%;
+    color:white;
+    text-align: center;
+    letter-spacing: 10px;
+    padding-right: 0px;
+  }
+  button{
+    overflow: hidden;
+  }
+  .review_layout1{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .review_layout2{
+
+  }
+  .중앙{
+  transform: translate(0, 50%);
+  }
+
+/*미디어쿼리*/
+@media (max-width: 1290px){
+    .container {width: 100%;}
+
+}
+
+@media (max-width: 1024px){
+    .row {padding: 0 24px;}
+}
+
+@media (max-width: 960px){
+}
+
+@media (max-width: 768px){
+    .row {padding: 0 16px;}
+    .logo{ background-size:300px 100px; background-repeat: no-repeat;
+
+}
+
+}
+
+@media (max-width: 600px){
+
+    .logo{background-image:url("../img/logo1.png" ); background-size:120px 120px; background-repeat: no-repeat;
+    }
+
+}
+
+
+@media (max-width: 480px){
+
+}
+
+@media (max-width: 320px){
+
+}

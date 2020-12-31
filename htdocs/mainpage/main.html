@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer_white.css">
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./img/favicon.ico"> <!--16x16픽셀-->
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.min.js"></script>
+      <script type="text/javascript">
+         alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+      </script>
+   <![endif]-->
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="row">
+               <div class="header clearfix">
+                <div class="logo" onclick="location.reload(true);" style="cursor: pointer;"></div>
+                <div class="toolbar"style="display:block;">
+                    <ul>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">로그인</a></li>
+                    </ul>
+                </div>
+                <div class="toolbar1" style="display:none;">
+                <ul>
+                <li><p class="name">~~님</p>
+                <form action="./main.php" method="post">
+                <input type="submit" class="logout"value="로그아웃">
+                </form>
+                </li>
+                <li><p>포인트:<span>100</span>[<a href="">포인트적립</a>]</p></li>
+                </ul>
+
+
+                </div>
+                <div class="search">
+                    <input class="search__input" type="text" placeholder="Search">
+                    <input class="search__btn" type="button"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- 헤더 끝 -->
+    <section id="movie">
+        <div class="container">
+            <div class="row">
+                <div class="movie">
+                    <div class="title"><h3>최신영화</h3></div>
+                    <div class="movie_chart">
+                        <div class="swiper-container2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="./img/poster.jpg" alt="조커">
+                                        </figure>
+                                    </div>
+                                    <div class="infor">
+                                        <h3>조커</h3>
+                                        <div class="infor_btn">
+                                            <a href="./joker/joker.html">상세보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="./img/poster1.jpg" alt="타짜">
+                                        </figure>
+                                    </div>
+                                    <div class="infor">
+                                        <h3>타짜</h3>
+                                        <div class="infor_btn">
+                                            <a href="#">상세보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="./img/poster2.jpg" alt="어밴져스">
+                                        </figure>
+                                    </div>
+                                    <div class="infor">
+                                        <h3>어밴져스</h3>
+                                        <div class="infor_btn">
+                                            <a href="#">상세보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="./img/poster3.jpg" alt="82년생 김지영">
+                                        </figure>
+                                    </div>
+                                    <div class="infor">
+                                        <h3>82년생 김지영</h3>
+                                        <div class="infor_btn">
+                                            <a href="#">상세보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="./img/poster4.jpg" alt="스파이더맨">
+                                        </figure>
+                                    </div>
+                                    <div class="infor">
+                                        <h3>스파이더맨</h3>
+                                        <div class="infor_btn">
+                                            <a href="#">상세보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="./img/poster5.jpg" alt="변신">
+                                        </figure>
+                                    </div>
+                                    <div class="infor">
+                                        <h3>변신</h3>
+                                        <div class="infor_btn">
+                                            <a href="#">상세보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="./img/poster6.jpg" alt="블랙머니">
+                                        </figure>
+                                    </div>
+                                    <div class="infor">
+                                        <h3>블랙머니</h3>
+                                        <div class="infor_btn">
+                                            <a href="#">상세보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="poster">
+                                        <figure>
+                                            <img src="./img/poster7.jpg" alt="신의한수:귀수편">
+                                        </figure>
+                                    </div>
+                                    <div class="infor">
+                                        <h3>신의한수:귀수편</h3>
+                                        <div class="infor_btn">
+                                            <a href="#">상세보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--리뷰+예고편-->
+       <section id="left">
+        <div class="container">
+            <div class="row">
+               <div class="review">
+                <div class="prereview a1">
+                    <div class="title">
+                        <h3>인기리뷰</h3>
+                        <a href="#"><span></span></a>
+                    </div>
+                    <div class="review_box">
+                        <div class="box_top">
+                            <span class="review_line">
+                                <p class="review_title">광기 어린 시대의 어릿광대 조커
+                                </p>
+                            </span><span class="review_line">2019.10.07</span> 추천 6
+                            <br>
+                            <a href="https://movie.naver.com/movie/bi/mi/reviewread.nhn?nid=4724487&code=167613&order=#tab" target="_blank" class="밑줄">
+                                조커 감독 토드 필립스 출연 호아킨 피닉스, 재지 비츠, 로버트 드 니로 개봉 2019.10.02.
+                                미국 평점 리뷰보기 Warning! 스포일러 다수 포함! 이번에 리뷰할 영화는 토...
+                            </a></div>
+                            <hr style="border:1px dashed gray;">
+                        <div class="box_mid">
+                            <span class="review_line">
+                                <p class="review_title">히스 레저를 뛰어넘을 진정한 조커</p>
+                            </span><span class="review_line"> 2019.09.10</span>추천 9
+                            <br>
+                            <a href="https://movie.naver.com/movie/bi/mi/reviewread.nhn?nid=4720621&code=167613&order=#tab" target="_blank" class="밑줄">
+                                비운의 운명으로 세상을 달리한 리버 피닉스의 형제 호아킨 피닉스,그동안 글래디 에이터, 너는 거기에 없었다 등 대중적인 작품 및 예술성 있는다양한 작품들에서 뛰어난 연기력을 보여주어왔다.항상 슬픔을 간직한 듯한 표정과 눈빛은 ...
+                            </a>
+                        </div>
+                        <hr style="border:1px dashed gray;">
+                        <div class="box_bot">
+
+                        </div>
+                    </div>
+                </div>
+
+            <div class="preview a2">
+                <div class="title ">
+                    <h3>예고편</h3>
+                    <a href="#"><span></span></a>
+                </div>
+                <div class="previewbox">
+                    <div class="preview_vd">
+                        <div class="play" id="showTrailer" data-youtube="TTrpe9JIMe8">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+                                <circle class="st0" cx="60" cy="60.4" r="56" />
+                                <path class="st1" d="M81,65.4c4.8-2.8,4.8-7.2,0-10L53.5,39.6c-4.8-2.8-8.7-0.5-8.7,5v31.7c0,5.5,3.9,7.8,8.7,5L81,65.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="preview_vd1" id="showTrailer1" data-youtube="6fdDp_U55zU">
+                    </div>
+                    <div class="preview_vd2" id="showTrailer2" data-youtube="YnLtR9HT52U">
+
+                    </div>
+                    <div class="preview_vd3" id="showTrailer3" data-youtube="cfJpcDAyzqE">
+
+                    </div>
+                    <div class="preview_vd4" id="showTrailer4" data-youtube="JiJtqqYr18U">
+
+                    </div>
+                    <div class="preview_vd5" id="showTrailer5" data-youtube="Gz0ZeY1U4vY">
+
+                    </div>
+                    <div class="preview_vd6" id="showTrailer6" data-youtube="x60mB0zXZ38">
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="footer">
+
+        <div class="footer2">
+
+          <div class="f_img">
+          <div class="f_img2">
+              <img src="img/logo1.png" id="foot_img">
+          </div>
+          <div class="f_logo">
+            <div class="f_text"> Movie Entertainment</div>
+            <div class="f_text2">home made html</div>
+          </div>
+        </div>  <!--f_img-->
+
+          <div class="f_info">(주)ComputerScience
+            <div class="f_선"></div>사업자등록번호 201-60-10889
+            <div class="f_선"></div>팩스: 02-201-91213
+         </div>
+          <div class="f_info">주소: 진주시 진주대로 501
+            <div class="f_선"></div>Server & Game: 김민준
+            <div class="f_선"></div>Javascript & Css: 이경재
+            <div class="f_선"></div>Css & Html: 이용대
+       </div>
+          <div class="f_info">본사 대표전화: 055-772-0114
+            <div class="f_선"></div>고객센터: 1544-3279
+       </div>
+          <div class="f_info" id="f_last">
+            COPYRIGHTⓒ 2019 THEBORN KOREA INC. ALL RIGHTS RESERVED
+          </div>
+        </div>
+
+    </section>  <!--footer-->
+    <aside role="complementary" id="blackout" class="overlay">
+        <div id="trailerModal" class="modal">
+            <div id="trailer"></div><!-- YouTube 플레이어로 대체되는 부분 -->
+        </div>
+        <button id="hideTrailer" class="modal_close">닫기</button>
+    </aside>
+    <!--- 자바 라이브러리 -->
+    <script type="text/javascript" src="./js/jquery.min_1.12.4.js"></script>
+    <script type="text/javascript" src="./js/modernizr-custom.js"></script>
+    <script type="text/javascript" src="./js/ie-checker.js"></script>
+    <script type="text/javascript" src="./js/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/iframe_api.js"></script>
+    <script type="text/javascript" src="./js/movie.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container2', {
+            slidesPerView: 4,
+            spaceBetween: 24,
+            loop:true,
+            //            mousewheel: {
+            //                invert: true,
+            //            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
+            autoplay: {
+                delay: 2000,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 1.4,
+                    spaceBetween: 24
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24
+                },
+                960: {
+                    slidesPerView: 3,
+                    spaceBetween: 24
+                }
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <link rel="shortcut icon" href="./img/favicon.ico"> <!--16x16픽셀-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/detail.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer_black.css">
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./img/favicon.ico"> <!--16x16픽셀-->
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script type="text/javascript">
+         alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+      </script>
+   <![endif]-->
+    <title>포토샵본</title>
+
+    <style> /*수정해야할것들 꺼내놓음*/
+    .slider .ss1 {
+        background: url(img/joker_image1.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .slider .ss2 {
+        background: url(img/joker_image2.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .slider .ss3 {
+        background: url(img/joker_image3.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .slider .ss4 {
+        background: url(img/joker_image4.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    #re2 .re_mov1 {
+        margin: 0 auto;
+        position: relative;
+        width: 354px;
+        height: 200px;
+        background: #ccc url(img/mv_review1.webp) center center;
+        background-size: cover;
+    }
+    #re2 .re_mov2 {
+        margin: 0 auto;
+        position: relative;
+        width: 354px;
+        height: 200px;
+        background: #ccc url(img/mv_review2.webp) center center;
+        background-size: cover;
+    }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="row">
+               <div class="header clearfix">
+                <div class="logo"OnClick="location.href ='../main.html';"style="cursor:pointer;" ></div>
+                <div class="toolbar"style="display:block;">
+                    <ul>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">로그인</a></li>
+                    </ul>
+                </div>
+                <div class="toolbar1" style="display:none;">
+                <ul>
+                <li><p class="name">~~님</p>
+                <form action="./main.php" method="post">
+                <input type="submit" class="logout"value="로그아웃">
+                </form>
+                </li>
+                <li><p>포인트:<span>100</span>[<a href="">포인트적립</a>]</p></li>
+                </ul>
+
+
+                </div>
+                <div class="search">
+                    <input class="search__input" type="text" placeholder="Search">
+                    <input class="search__btn" type="button"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div id= "name_case">
+    <div id="poster">
+      조커
+    </div>
+  </div>
+
+    <div id="main"> <!--가로 조정범위 11.27-->
+            <div id="story">  <!--첫번째 부분-->
+              <div class="sub_title">
+                영화 소개
+              </div>
+              <div id ="one_text">
+                <span id="h3">“내 인생이 비극인줄 알았는데, 코미디였어”</span>
+              </div>
+                <div id="main_story">
+                    고담시의 광대 아서 플렉은 코미디언을 꿈꾸는 남자.<br>
+                    하지만 모두가 미쳐가는 코미디 같은 세상에서
+                    맨 정신으로는 그가 설 자리가 없음을 깨닫게 되는데…<br>
+                    이제껏 본 적 없는 진짜 ‘조커’를 만나라!
+                </div>
+            </div>
+
+            <div class="margin190"></div>
+
+            <div id="still"><!--두번째 부분-->
+              <div class="sub_title">
+                이미지
+              </div>
+
+                <div class="slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ss1"></div>
+                            <div class="swiper-slide ss2"></div>
+                            <div class="swiper-slide ss3"></div>
+                            <div class="swiper-slide ss4"></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper_text">이미지를 클릭하면 더욱 큰 화면으로 보실 수 있습니다.</div>
+                </div>
+            </div>
+
+            <div class="margin190"></div>
+
+        <div id="character">
+          <div class="sub_title">
+            제작/출연
+          </div>
+
+            <div id ="character2_틀">
+            <div class="character2">
+
+                <img src="img/토드 필립스.jpg" class="char_img">
+                <div class="ch_name">
+                  감독 <br>
+                  토드 필립스
+                </div>
+
+            </div>
+            <div class="character2">
+                <img src="img/호아킨 피닉스.jpg" class="char_img">
+                <div class="ch_name">
+                    주연<br>
+                    호아킨 피닉스
+                </div>
+            </div>
+            <div class="character2">
+                <img src="img/재지 비츠.jpg" class="char_img">
+                <div class="ch_name">
+                    조연<br>
+                    재지 비츠
+                </div>
+            </div>
+            <div class="character2">
+                <img src="img/로버트 드 니로.jpg" class="char_img">
+                <div class="ch_name">
+                  조연<br>
+                  로버트 드 니로
+                </div>
+            </div>
+            <div class="character2">
+                <img src="img/프란시스 콘로이.jpg" class="char_img">
+                <div class="ch_name">
+                  조연<br>
+                  프란시스 콘로이
+                </div>
+            </div>
+
+          </div>
+        </div>
+
+          <div class="margin190"></div>
+
+
+        <div class="sub_title2" id="re">
+          리뷰
+        </div>
+        <div id="last">   <!--리뷰 파트-->
+
+            <div id="re1">
+
+                <div id="review">
+                    <div class="review_layout">
+                        <span class="review_line">
+                            <p class="review_title">광기 어린 시대의 어릿광대 <조커>
+                            </p>
+                        </span><span class="review_line">2019.10.07</span> 추천 6
+                        <br>
+                        <a href="https://movie.naver.com/movie/bi/mi/reviewread.nhn?nid=4724487&code=167613&order=#tab" target="_blank" class="밑줄">
+                            조커 감독 토드 필립스 출연 호아킨 피닉스, 재지 비츠, 로버트 드 니로 개봉 2019.10.02.
+                            미국 평점 리뷰보기 Warning! 스포일러 다수 포함! 이번에 리뷰할 영화는 토...
+                        </a>
+                    </div>
+                    <div class="review_layout">
+                        <span class="review_line">
+                            <p class="review_title">히스 레저를 뛰어넘을 진정한 조커</p>
+                        </span><span class="review_line"> 2019.09.10</span>추천 9
+                        <br>
+                        <a href="https://movie.naver.com/movie/bi/mi/reviewread.nhn?nid=4720621&code=167613&order=#tab" target="_blank" class="밑줄">
+                            비운의 운명으로 세상을 달리한 리버 피닉스의 형제 호아킨 피닉스,그동안 글래디 에이터, 너는 거기에 없었다 등 대중적인 작품 및 예술성 있는다양한 작품들에서 뛰어난 연기력을 보여주어왔다.항상 슬픔을 간직한 듯한 표정과 눈빛은 ...
+                        </a>
+                    </div>
+
+                </div>
+                <br>
+                  <div id="더보기">
+                    <a href="" target="_blank">
+                        더보기 &gt;
+                    </a>
+                  </div>
+            </div>
+            <!--#re1 리뷰글 part 왼쪽꺼-->
+
+            <div id="re2">
+                <div id="re_mov">
+                    동영상리뷰
+                </div>
+                <div class="re_mov1">
+                    <div class="play" id="showTrailer" data-youtube="q6MGNQYMe0I">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+                            <circle class="st0" cx="60" cy="60.4" r="56" />
+                            <path class="st1" d="M81,65.4c4.8-2.8,4.8-7.2,0-10L53.5,39.6c-4.8-2.8-8.7-0.5-8.7,5v31.7c0,5.5,3.9,7.8,8.7,5L81,65.4z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="re_mov2">
+                    <div class="play" id="showTrailer2" data-youtube="TIm-QOkb4XY">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+                            <circle class="st0" cx="60" cy="60.4" r="56" />
+                            <path class="st1" d="M81,65.4c4.8-2.8,4.8-7.2,0-10L53.5,39.6c-4.8-2.8-8.7-0.5-8.7,5v31.7c0,5.5,3.9,7.8,8.7,5L81,65.4z" />
+                        </svg>
+                    </div>
+                </div>
+                <br>
+                  <div id="더보기">
+                    <a href="https://www.youtube.com/results?search_query=%EC%A1%B0%EC%BB%A4+%EB%A6%AC%EB%B7%B0" target="_blank">
+                        더보기 &gt;
+                    </a>
+                  </div>
+            </div>
+        </div>
+        <!--last-->
+        <div class="margin190"></div>
+
+      <div id="other_comment_layout"> <!--글쓰기시 나오는 곳-->
+        <div class="sub_title">
+            한줄평
+          </div>
+        <div id="review"> <!--줄 간격-->
+
+          <div class="chat_case">
+		  <div class="chat_icon"><img src="img/people.jpg" class="c_icon"></div>	<!--아이콘-->
+      			   <div class="jb-image">
+                 <img src="chat.png" alt="" id="ch">
+               </div>
+      			<div class="chat_text">
+              <span class="review_line">
+                  <p class="review_title">
+                  닉네임
+                  </p>
+                  <span>(</span>
+                  <p class="ip">
+                    1.23.45.678 <!--ip-->
+                   </p>
+                   <span>)</span>
+              </span>
+              <p class="date">
+              2019.09.10    <!--날짜-->
+              </p>
+              <p class="">
+                내용이 들어갈 곳
+              </p>
+      			</div>
+      		</div>    <!--한개의 리뷰-->
+
+	
+        </div>
+        <div class="num1">
+          <div class="num2">
+            <button class="number"> 1 </button>
+            <button class="number"> 2 </button>
+            <button class="number"> 3 </button>
+          </div>
+        </div>
+
+    </div>  <!--리뷰 달리는곳 전체 레이아웃-->
+
+          <div id="한줄평_틀">
+
+            <div id="comment_part">
+
+              <div id= nick_틀>
+                <input type ="text" placeholder="닉네임" class="nick" value="" id="">
+              </div>
+              <textarea class="comment" placeholder="내용을 입력해주세요." ></textarea>
+                </div>
+            <button class="snip1535">글쓰기</button>
+
+        </div> <!--한줄평 틀-->
+
+	
+    </div>  <!--main-->
+    <section id="footer">
+
+        <div class="footer2">
+
+          <div class="f_img">
+          <div class="f_img2">
+              <img src="img/logo1.png" id="foot_img">
+          </div>
+          <div class="f_logo">
+            <div class="f_text"> Movie Entertainment</div>
+            <div class="f_text2">home made html</div>
+          </div>
+        </div>  <!--f_img-->
+
+          <div class="f_info">(주)ComputerScience
+            <div class="f_선"></div>사업자등록번호 201-60-10889
+            <div class="f_선"></div>팩스: 02-201-91213
+         </div>
+          <div class="f_info">주소: 진주시 진주대로 501
+            <div class="f_선"></div>Server & Game: 김민준
+            <div class="f_선"></div>Javascript & Css: 이경재
+            <div class="f_선"></div>Css & Html: 이용대
+       </div>
+          <div class="f_info">본사 대표전화: 055-772-0114
+            <div class="f_선"></div>고객센터: 1544-3279
+       </div>
+          <div class="f_info" id="f_last">
+            COPYRIGHTⓒ 2019 ComputerScience INC. ALL RIGHTS RESERVED
+          </div>
+        </div>
+
+    </section>  <!--footer-->
+
+    <div id="nav">
+      <div id ="nav_title">
+      NAV
+    </div>
+        <div id ="nav2">
+          <a href="#sc">
+          search
+          </a>
+        </div>
+        <div id ="nav2">
+          <a href="#story">
+            information
+          </a>
+        </div>
+        <div id ="nav2">
+          <a href="#still">
+            img
+          </a>
+        </div>
+        <div id ="nav2">
+          <a href="#character">
+            character
+          </a>
+        </div>
+
+      <!--  <div id ="nav2">
+          <a href="#video" id="nav3">
+            movie
+          </a>
+        </div>  -->
+
+        <div id ="nav2">
+          <a href="#re" id="nav3">
+            review
+          </a>
+        </div>
+        <div id ="nav2">
+          <a href="#other_comment_layout" id="nav3">
+            my_review
+          </a>
+        </div>
+    </div>
+    <!-- 트레일러-->
+    <aside role="complementary" id="blackout" class="overlay">
+        <div id="trailerModal" class="modal">
+            <div id="trailer"></div><!-- YouTube 플레이어로 대체되는 부분 -->
+        </div>
+        <button id="hideTrailer" class="modal_close">닫기</button>
+    </aside>
+    <!--- 자바 라이브러리 -->
+    <script type="text/javascript" src="./js/jquery.min_1.12.4.js"></script>
+    <script type="text/javascript" src="./js/modernizr-custom.js"></script>
+    <script type="text/javascript" src="./js/ie-checker.js"></script>
+    <script type="text/javascript" src="./js/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/iframe_api.js"></script>
+    <script type="text/javascript" src="./js/movie.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            cssMode: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+</body>
+
+</html>
