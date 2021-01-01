@@ -22,7 +22,7 @@ $myMovie="jocker";
          alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
       </script>
    <![endif]-->
-    <title>포토샵본</title>
+    <title>조커</title>
 
     <style> /*수정해야할것들 꺼내놓음*/
 
