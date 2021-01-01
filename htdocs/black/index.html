@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <link rel="shortcut icon" href="./img/favicon.ico"> <!--16x16픽셀-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/detail.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer_black.css">
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./img/favicon.ico"> <!--16x16픽셀-->
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script type="text/javascript">
+         alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+      </script>
+   <![endif]-->
+    <title>블랙머니</title>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="row">
+               <div class="header clearfix">
+                <div class="logo"OnClick="location.href ='../mainpage';"style="cursor:pointer;" ></div>
+                <div class="toolbar"style="display:block;">
+                    <ul>
+                        <li><a href="../register">회원가입</a></li>
+                        <li><a href="../Login">로그인</a></li>
+                    </ul>
+                </div>
+                <div class="toolbar1" style="display:none;">
+                <ul>
+                <li><p class="name">~~님</p>
+                <form action="./main.php" method="post">
+                <input type="submit" class="logout"value="로그아웃">
+                </form>
+                </li>
+                <li><p>포인트:<span>100</span>[<a href="">포인트적립</a>]</p></li>
+                </ul>
+
+
+                </div>
+                <div class="search">
+                    <input class="search__input" type="text" placeholder="Search">
+                    <input class="search__btn" type="button"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div style="overflow: hidden;margin-top: 10%;margin-bottom: 10%;">
+    <h1 style="font-size:32px;text-align:center;"> 서비스 이용에 불편 드려 죄송합니다.</h1>
+    <h2 style="font-size:20px;text-align:center;"> 페이지 작업중에 있습니다.</h2>
+              <h2 style="font-size:20px;text-align:center;"> 빠른시일내로 정상 서비스 하겠습니다.</h2>
+    </div>
+      <!--main-->
+    <section id="footer">
+
+        <div class="footer2">
+
+          <div class="f_img">
+          <div class="f_img2">
+              <img src="img/logo1.png" id="foot_img">
+          </div>
+          <div class="f_logo">
+            <div class="f_text"> Movie Entertainment</div>
+            <div class="f_text2">home made html</div>
+          </div>
+        </div>  <!--f_img-->
+
+          <div class="f_info">(주)ComputerScience
+            <div class="f_선"></div>사업자등록번호 201-60-10889
+            <div class="f_선"></div>팩스: 02-201-91213
+         </div>
+          <div class="f_info">주소: 진주시 진주대로 501
+            <div class="f_선"></div>Server & Game: 김민준
+            <div class="f_선"></div>Javascript & Css: 이경재
+            <div class="f_선"></div>Css & Html: 이용대
+       </div>
+          <div class="f_info">본사 대표전화: 055-772-0114
+            <div class="f_선"></div>고객센터: 1544-3279
+       </div>
+          <div class="f_info" id="f_last">
+            COPYRIGHTⓒ 2019 ComputerScience INC. ALL RIGHTS RESERVED
+          </div>
+        </div>
+
+    </section>  <!--footer-->
+
+    <div id="nav">
+      <div id ="nav_title">
+      NAV
+    </div>
+        <div id ="nav2">
+          <a href="#sc">
+          search
+          </a>
+        </div>
+        <div id ="nav2">
+          <a href="#story">
+            information
+          </a>
+        </div>
+        <div id ="nav2">
+          <a href="#still">
+            img
+          </a>
+        </div>
+        <div id ="nav2">
+          <a href="#character">
+            character
+          </a>
+        </div>
+
+      <!--  <div id ="nav2">
+          <a href="#video" id="nav3">
+            movie
+          </a>
+        </div>  -->
+
+        <div id ="nav2">
+          <a href="#re" id="nav3">
+            review
+          </a>
+        </div>
+        <div id ="nav2">
+          <a href="#other_comment_layout" id="nav3">
+            my_review
+          </a>
+        </div>
+    </div>
+    <!-- 트레일러-->
+    <aside role="complementary" id="blackout" class="overlay">
+        <div id="trailerModal" class="modal">
+            <div id="trailer"></div><!-- YouTube 플레이어로 대체되는 부분 -->
+        </div>
+        <button id="hideTrailer" class="modal_close">닫기</button>
+    </aside>
+    <!--- 자바 라이브러리 -->
+    <script type="text/javascript" src="./js/jquery.min_1.12.4.js"></script>
+    <script type="text/javascript" src="./js/modernizr-custom.js"></script>
+    <script type="text/javascript" src="./js/ie-checker.js"></script>
+    <script type="text/javascript" src="./js/swiper.min.js"></script>
+    <script type="text/javascript" src="./js/iframe_api.js"></script>
+    <script type="text/javascript" src="./js/movie.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            cssMode: true,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+</body>
+
+</html>
