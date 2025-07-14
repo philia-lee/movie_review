@@ -1,0 +1,540 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a:hover{text-decoration: underline;}
+
+/* 레이아웃 */
+#header {width: 100%; border-bottom: 1px solid #c6c6c6;}
+
+
+/* 가운데 영역 */
+.container {position: relative; width: 1280px; margin: 0 auto;}
+
+.row {
+    padding: 0 28px;
+    position: relative;
+}
+body{
+  margin-bottom: 0;
+}
+
+/* 헤더 */
+.logo {
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+    width:410px;
+    height:110px;
+    background-image: url("../img/logo.png");
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.toolbar{
+    position: absolute;
+    right:10px;
+    overflow: hidden;
+    width:176px;
+    border-bottom:1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+}
+.toolbar ul{
+    text-align: right;
+}
+.toolbar li{
+    text-align:start;
+    display: inline-block;
+}
+.toolbar li a{
+    display: block;
+}
+.toolbar li a{
+    text-decoration: none;
+}
+.toolbar li:last-child{
+     border-left: 1px solid black;
+    padding: 5px 22px;
+    width:40px;
+}
+.toolbar li:first-child{
+
+     padding: 5px 12px;
+    width:60px;
+}
+.toolbar1{
+
+    position: absolute;
+    right:10px;
+    padding-left: 10px;
+    overflow: hidden;
+    width:176px;
+    border-bottom:1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+}
+.toolbar1 ul{
+    text-align: left;
+}
+.toolbar1 li{
+    text-align:start;
+    font-size: 15px;
+    position: relative;
+}
+.toolbar1 .name{
+    float:left;
+
+}
+.toolbar1 .logout{
+    position: absolute;
+    right:20px;
+    width:58px;
+    outline:none;
+    border:1px solid #e5e8ef;;
+    cursor: pointer;
+    color: #444;
+    background-color: white;
+    font-size:13px;
+}
+.toolbar1 input:hover{
+    border-color: #bec8d8;
+}
+.toolbar1 li:last-child{
+clear: both;
+}
+.search__input{width:199px;height: 19px;
+border:0;
+padding:5px 0px;
+outline: 0;
+background-color: transparent;
+font-size: 14px;
+}
+.search__btn{
+    height:20px;
+    width:21px;
+    font-size:14px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+}
+.search{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    overflow: hidden;
+
+    width: 226px;
+    height: 19px;
+    color: white;
+    padding: 5px 11px;
+    background-color: #5b5b5b;
+    transition: transform 250ms ease-in-out;
+    line-height: 18px;
+    color: #575756;
+    background-color: #5b5b5b;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.search__input:placeholder {
+    color: color(white a(0.8));
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.search__btn:hover{cursor:pointer;}
+.search:hover,
+.search:focus-within {
+    padding: 5px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+    background-color: transparent;
+}
+
+/*최신영화*/
+
+.movie {
+    padding: 20px 0;
+}
+
+.title h3{
+    padding-bottom: 16px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 나눔글꼴;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.movie_chart {
+    overflow: hidden;
+}
+
+.movie_chart > div {
+    overflow: hidden;
+}
+
+.movie_chart > div > div > div {
+    float: left;
+    width: 290px;
+    margin-right: 18px;
+}
+
+.movie_chart > div > div > div:last-child {
+    margin-right: 0;
+}
+
+.movie_chart > div > div > div .poster {
+    position: relative;
+}
+
+.movie_chart > div > div > div .poster img {
+    display: block;
+}
+
+.movie_chart > div > div > div .infor {
+    background: #fff;
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+    text-align: center
+}
+.swiper-slide{
+
+}
+.movie_chart > div > div > div .infor h3 {
+    color: #333;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.movie_chart > div > div > div .infor .infor_btn {
+    overflow: hidden;
+
+}
+
+.movie_chart > div > div > div .infor .infor_btn a {
+    float: right;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    background: #f2f2f2;
+    font-size: 18px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.movie_chart > div > div > div .infor .infor_btn a:hover{
+    text-decoration: none;
+    color: black;
+    background:#c6c6c6
+}
+.movie_chart > div > div > div .infor .infor_btn a:last-child {
+    margin-right: 0;
+}
+
+
+.review{overflow: hidden;}
+
+#left .a1{
+    float: left;
+    width: 45%;
+}
+
+#left .a2 {
+    float: right;
+    width: 45%;
+}
+
+.title span,
+.title h3 {
+    display: inline-block;
+}
+.title span {
+    float: right;
+    font-weight: 100;
+    font-size: 13px;
+    font-family: 맑은고딕;
+    margin-top: 30px;
+
+
+}
+
+
+/*예고편 부분*/
+.preview_vd {
+
+    background: url(../img/preview.PNG) no-repeat center center;
+    height: 300px;
+    width:100%;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.preview_vd1 {
+
+    background: url(../img/preview1.PNG) no-repeat center center;
+    height: 100px;
+    width: 33%;
+    background-size: cover;
+    float: left;
+    margin-right: 0.5%;
+    margin-bottom: 10px;
+}
+
+.preview_vd2 {
+
+    background: url(../img/preview2.PNG) no-repeat center center;
+    height: 100px;
+    width: 33%;
+    background-size: cover;
+    float: left;
+    margin-right: 0.5%;
+    margin-bottom: 10px
+}
+
+.preview_vd3 {
+
+    background: url(../img/preview3.PNG) no-repeat center center;
+    height: 100px;
+    width: 33%;
+    background-size: cover;
+    float: left;
+    margin-bottom: 10px
+}
+
+.preview_vd4 {
+
+    background: url(../img/preview4.PNG) no-repeat center center;
+    height: 100px;
+    width: 33%;
+    background-size: cover;
+    clear: both;
+    float: left;
+    margin-right: 0.5%;
+}
+
+.preview_vd5 {
+
+    background: url(../img/preview5.PNG) no-repeat center center;
+    height: 100px;
+    width: 33%;
+    background-size: cover;
+    float: left;
+    margin-right: 0.5%;
+}
+.preview_vd6 {
+    background: url(../img/preview6.PNG) no-repeat center center;
+    height: 100px;
+    width: 33%;
+    background-size: cover;
+    float: left;
+}
+.modal_close {
+    background: url(../img/close.svg) no-repeat;
+    background-size: 32px 32px;
+    border: 0;
+    color: transparent;
+    display: block;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    text-indent: 100%;
+}
+
+body.modal_on {
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute
+}
+
+
+
+.play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+}
+
+.play .st0 {
+    fill: #fff;
+    opacity: 0.3
+}
+
+.play .st1 {
+    fill: #fff;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, .92);
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    overflow: hidden;
+}
+
+.previewbox {
+    overflow: hidden;
+
+}
+.preview_vd:hover, .preview_vd1:hover, .preview_vd2:hover, .preview_vd3:hover, .preview_vd4:hover, .preview_vd5:hover, .preview_vd6:hover{
+    cursor: pointer
+}
+
+.preview_vd{
+    border-radius: 30px;
+
+}
+.preview_vd1{
+    border-top-left-radius: 30px;
+}
+.preview_vd3{
+    border-top-right-radius: 30px;
+}
+.preview_vd4{
+    border-bottom-left-radius: 30px;
+}
+.preview_vd6{
+    border-bottom-right-radius: 30px;
+}
+/*리뷰 부분*/
+.review_box {
+
+    width: auto;
+    height: 530px;
+    overflow: hidden;
+
+    color:white;
+}
+.title a {
+    color: #737373;
+}
+
+a:hover{text-decoration: underline;}
+.review_box a{color:white;}
+.box_top {
+    border-radius: 30px;
+    background-color:#5d5d5d;
+    padding:10px;
+
+    height: 141px;
+    margin-bottom: 5px;
+    display: block;
+    position: relative;}
+.box_mid {
+    padding:10px;
+     border-radius: 30px;
+    background-color:#5d5d5d;
+    margin-top:5px;
+    height: 141px;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;}
+.box_bot {
+padding:10px;
+     border-radius: 30px;
+    background-color:#5d5d5d;
+    height: 141px;
+    display: block;
+    position: relative;
+    margin-top:5px;
+}
+
+.review_line {
+
+    border-right: 1px solid gray;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.review_layout {
+    padding: 30px 0px;
+    text-align: left;
+}
+    .review_title {
+        color: #FFE08C;
+        display: inline;
+    }
+
+/* 미디어쿼리 */
+@media (max-width: 1290px){
+    .container {width: 100%;}
+
+}
+
+@media (max-width: 1024px){
+    .row {padding: 0 24px;}
+    #left .a1{float:none;width:100%}
+    #left .a2{float:none;width:100%}
+    .title h3{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 나눔글꼴;
+}
+
+}
+
+@media (max-width: 960px){
+    .slider {height: 500px;}
+
+@media (max-width: 768px){
+    .row {padding: 0 16px;}
+    #movie .row {background: #fff; padding: 20px;}
+    .movie {padding: 0;}
+    .logo{ background-size:300px 100px; background-repeat: no-repeat;
+
+}
+
+}
+
+@media (max-width: 600px){
+    .slider {height: 400px;}
+    #movie .container {}
+    #movie .container:after {content: ''; position: absolute; z-index: 20; top: 0; right: 0; width: 8px; height: 100%; background: #d9d7e0;}
+    #movie .row {position: relative; margin: 8px; padding: 16px; margin-right: 0; padding-right: 0;}
+    #movie .row:after {content: ''; position: absolute; top: 0; right: 0; z-index: 10; width: 24px; height: 100%; background-color: #fff;}
+    .movie_chart > div > div > div .infor {padding: 5px;}
+    .movie_chart > div > div > div .infor h3 {text-align: center; margin: 5px 0 10px;}
+    .movie_chart > div > div > div .infor h3{display: block; font-size: 19px; color: #222; font-weight: 300;}
+    .movie_chart > div > div > div .infor .infor_btn a {margin-left: 24%; display: block; margin-right: 0; padding: 5px; color: #777; margin-bottom: 5px; box-sizing: border-box; font-size: 14px; background: none; border: 1px solid #ddd;}
+    .logo{background-image:url("../img/logo1.png" ); background-size:120px 120px; background-repeat: no-repeat;
+    }
+
+}
+
+
+@media (max-width: 480px){
+
+}
+
+@media (max-width: 320px){
+
+}
